@@ -11,7 +11,7 @@ package oocminihw2;
 public class Boat extends Vehicle implements Sailable {
     private boolean sailHoisted;
 
-    public Boat(int numSails, boolean sailHoisted, float speed, String make, String type, int numPassengers) {
+    public Boat(int numSails, boolean sailHoisted, double speed, String make, String type, int numPassengers) {
         super(speed, make, type, numPassengers);
         this.sailHoisted = sailHoisted;
         this.numSails = numSails;

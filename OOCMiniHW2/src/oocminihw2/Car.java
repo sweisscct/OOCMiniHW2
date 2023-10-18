@@ -10,7 +10,7 @@ package oocminihw2;
  */
 public class Car extends Vehicle implements Drivable {
 
-    public Car(float speed, String make, String type, int numPassengers) {
+    public Car(double speed, String make, String type, int numPassengers) {
         super(speed, make, type, numPassengers);
         this.numWheels = 4;
     }
@@ -20,7 +20,7 @@ public class Car extends Vehicle implements Drivable {
 //        return this.type;
 //    }
     @Override
-    public void turn(float angle) {
+    public void turn(double angle) {
 //        float currentDirection = this.getDirection();
         this.setDirection(this.getDirection() + angle);
     }
@@ -30,7 +30,7 @@ public class Car extends Vehicle implements Drivable {
     }
     
     @Override
-    public void accelerate(float speedChange) {
+    public void accelerate(double speedChange) {
         this.setSpeed(this.getSpeed() + speedChange);
     }
     

@@ -9,8 +9,8 @@ package oocminihw2;
  * @author sweis
  */
 public abstract class Vehicle {
-    private float speed;
-    private float direction = 0;
+    private double speed;
+    private double direction = 0;
     private String make;
     private String type;
     protected int numWheels = 0;
@@ -18,18 +18,18 @@ public abstract class Vehicle {
     protected int numSails = 0;
     private int numPassengers;
 
-    public Vehicle(float speed, String make, String type, int numPassengers) {
+    public Vehicle(double speed, String make, String type, int numPassengers) {
         this.speed = speed;
         this.make = make;
         this.type = type;
         this.numPassengers = numPassengers;
     }
 
-    public float getSpeed() {
+    public double getSpeed() {
         return speed;
     }
 
-    public float getDirection() {
+    public double getDirection() {
         return direction;
     }
 
@@ -45,11 +45,11 @@ public abstract class Vehicle {
         return numPassengers;
     }
 
-    public void setSpeed(float speed) {
+    public void setSpeed(double speed) {
         this.speed = speed;
     }
 
-    public void setDirection(float direction) {
+    public void setDirection(double direction) {
         this.direction = direction;
     }
     

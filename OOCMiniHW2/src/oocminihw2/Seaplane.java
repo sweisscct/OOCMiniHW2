@@ -9,25 +9,25 @@ package oocminihw2;
  * @author Lecturer
  */
 public class Seaplane extends Boat implements Flyable {
-    private float altitude;
+    private double altitude;
 
-    public Seaplane(float altitude, float speed, String make, String type, int numPassengers) {
+    public Seaplane(double altitude, double speed, String make, String type, int numPassengers) {
         super(0, false, speed, make, type, numPassengers);
         this.altitude = altitude;
     }
     
     @Override
-    public float getAltitude() {
+    public double getAltitude() {
         return altitude;
     }
     
     @Override
-    public void changeAltitude(float altitudeChange) {
+    public void changeAltitude(double altitudeChange) {
         altitude = altitude + altitudeChange;
     }
     
     @Override
-    public void turn(float angle) {
+    public void turn(double angle) {
 //        float currentDirection = this.getDirection();
         this.setDirection(this.getDirection() + angle);
     }
@@ -37,7 +37,7 @@ public class Seaplane extends Boat implements Flyable {
     }
     
     @Override
-    public void accelerate(float speedChange) {
+    public void accelerate(double speedChange) {
         this.setSpeed(this.getSpeed() + speedChange);
     }    
 }
